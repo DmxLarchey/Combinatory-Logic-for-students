@@ -1,0 +1,11 @@
+-R . Top
+square.v
+tacs.v
+cl.v
+rel.v
+cl_eq.v
+cl_beta.v
+cl_confluent.v
+cl_beta_redex.v
+cl_beta_inv.v
+cl_normal.v
