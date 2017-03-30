@@ -1,5 +1,7 @@
 ### Aux étudiants M1 de l'UE *Preuves et démonstrations automatisées*
 
+## Confluence de la logique combinatoire en Coq
+
 Bonjour à tous,
 
 Comme indiqué en TP, voici les instructions pour la réalisation
@@ -38,17 +40,15 @@ cl_beta_redex.v	: rel.v cl.v cl_eq.v cl_beta.v cl_beta_inv.v cl_normal.v
 Je vous rappelle que le but du projet est de 
 **compléter les preuves manquantes** ou 
 partiellement manquantes dans les fichiers
-
-
-cl_confluent.v  cl_eq.v  
-
-
-**perm.v**, **sorted.v** et **quicksort.v** (elles se
-terminent par *Admitted.*) Quand vous aurez terminé,
+**rel.v**, **square.v**, **cl_eq.v**,
+**cl_confluent.v**, **cl_beta.v**,
+**cl_beta_inv.v** et **cl_normal.v**
+(elles se terminent par *Admitted.*) 
+Quand vous aurez terminé,
 toutes vos preuves devraient se terminer par *Qed.*
 
 Le résultat de votre travail est à me rendre par email
-(larchey@loria.fr) à la date du 20 mai 2015. Le travail
+(larchey@loria.fr) à la date du 23 mai 2015. Le travail
 est **individuel** même si vous pouvez échanger des idées
 entre vous pour résoudre les exercices. N'oubliez pas
 de consulter la documentation en ligne de Coq
@@ -56,12 +56,14 @@ de consulter la documentation en ligne de Coq
 http://coq.inria.fr/documentation
 
 Je vous rappelle en outre qu'aucune preuve nouvelle n'est
-à inventer, elles ont toutes été *réalisées à la main* lors du
-cours. Votre travail est la mise en oeuvre formelle de ces
+à inventer, certaines ont été *réalisées à la main* lors du
+cours. Pour les autres, le principe d'induction utilisé
+dans la preuve est systématiquement fournis. 
+Votre travail est la mise en oeuvre formelle de ces
 preuves informelles dans l'outil Coq.
 
 Enfin, nous organiserons une **soutenance sur machine** d'une
-durée individuelle d'environ 15m le **jeudi 21 mai 2015**
+durée individuelle d'environ 15m le **jeudi 25 mai 2017**
 (date à confirmer) où vous nous présenterez le résultat de
 votre travail et nous exposerez les éventuelles difficultés
 que vous avez rencontrées.
@@ -70,4 +72,3 @@ Bon travail
 
 Dominique Larchey-Wendling
 
-Confluence de la logique combinatoire en Coq
