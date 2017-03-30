@@ -1,6 +1,6 @@
-### Aux étudiants M1 de l'UE *Preuves et démonstrations automatisées*
+## Aux étudiants M1 de l'UE *Preuves et démonstrations automatisées*
 
-## Confluence de la logique combinatoire en Coq
+### Confluence de la logique combinatoire en Coq
 
 Bonjour à tous,
 
@@ -46,6 +46,11 @@ partiellement manquantes dans les fichiers
 (elles se terminent par *Admitted.*) 
 Quand vous aurez terminé,
 toutes vos preuves devraient se terminer par *Qed.*
+Vous pouvez procéder dans l'ordre que vous souhaitez
+mais sachez cependant que l'on comprend mieux un énoncé
+une fois qu'on a terminé sa preuve. Les dépendances entre 
+les fichiers source Coq sont la contrepartie des
+dépendances entre certains résultats.
 
 Le résultat de votre travail est à me rendre par email
 (larchey@loria.fr) à la date du 23 mai 2015. Le travail
