@@ -50,10 +50,10 @@ Vous pouvez procéder dans l'ordre que vous souhaitez
 mais sachez cependant que l'on comprend mieux un énoncé
 une fois qu'on a terminé sa preuve. Les dépendances entre 
 les fichiers source Coq sont la contrepartie des
-dépendances entre certains résultats.
+dépendances entre certains théorèmes.
 
 Le résultat de votre travail est à me rendre par email
-(larchey@loria.fr) à la date du 23 mai 2015. Le travail
+(larchey@loria.fr) à la date du 23 mai 2017. Le travail
 est **individuel** même si vous pouvez échanger des idées
 entre vous pour résoudre les exercices. N'oubliez pas
 de consulter la documentation en ligne de Coq
@@ -62,8 +62,8 @@ http://coq.inria.fr/documentation
 
 Je vous rappelle en outre qu'aucune preuve nouvelle n'est
 à inventer, certaines ont été *réalisées à la main* lors du
-cours. Pour les autres, le principe d'induction utilisé
-dans la preuve est systématiquement fournis. 
+premier cours. Pour les autres, le principe d'induction utilisé
+dans la preuve est systématiquement fourni. 
 Votre travail est la mise en oeuvre formelle de ces
 preuves informelles dans l'outil Coq.
 
