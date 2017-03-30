@@ -45,7 +45,7 @@ Section usual_closures.
   
   Implicit Type (R T : X -> X -> Prop).
   
-  (* Reflexivite and transitive closure *)
+  (* Reflexive and transitive closure *)
   
   Inductive crt R : X -> X -> Prop :=
     | in_crt_1 : forall x y,        R x y 
@@ -58,7 +58,7 @@ Section usual_closures.
                           ->       x [R*> z
   where "x [ R *> y" := (crt R x y).
   
-  (* Reflexivite, symmetric and transitive closure *)
+  (* Reflexive, symmetric and transitive closure *)
    
   Inductive crst R : X -> X -> Prop :=
     | in_crst_1 : forall x y,       R x y
