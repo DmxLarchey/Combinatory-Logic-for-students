@@ -15,7 +15,7 @@ Definition square X (R : X -> X -> Prop) := forall f a b, R f a -> R f b -> exis
 
 Section square_crt.
 
-  Variables (X : Type) (R : _) (HR : @square X R).
+  Variables (X : Type) (R : X -> X -> Prop) (HR : @square X R).
 
   Let ri_square_1 n f a b :
            f [R,1>> a
@@ -29,7 +29,7 @@ Section square_crt.
     destruct Hf as (x & H1 & H2).
     apply rel_iter_one in Ha.
     destruct (HR Ha H1) as (c & H3 & H4).
-    apply rel_iter_one in H4.
+    rewrite rel_iter_one in H4.
     destruct (IHn _ _ H4 H2) as (g & H5 & H6).
     exists g; split; auto.
     exists c; auto.
@@ -44,7 +44,7 @@ Section square_crt.
     revert m f a b; induction n as [ | n IHn ]; intros m f a b Ha Hb; simpl in Ha.
     subst; exists b; simpl; auto.
     destruct Ha as (x & H1 & H2).
-    apply rel_iter_one in H1.
+    rewrite rel_iter_one in H1.
     destruct (ri_square_1 _ _ H1 Hb) as (g & H3 & H4).
     destruct (IHn _ _ _ _ H2 H3) as (h & H5 & H6).
     exists h; simpl; split; auto.
@@ -59,6 +59,7 @@ Section square_crt.
     intros (na & Ha) (nb & Hb).
     destruct rel_iter_square with (1 := Ha) (2 := Hb)
       as (g & H1 & H2); auto.
+
   Admitted.
 
 End square_crt.
@@ -69,7 +70,7 @@ Definition church_rosser X (R : X -> X -> Prop) :=
 
 Section confluent_church_rosser.
 
-  Variable (X : Type) (R : _) (HR : @confluent X R).
+  Variable (X : Type) (R : X -> X -> Prop) (HR : @confluent X R).
   
   Fact confluent_church_rosser : church_rosser R.
   Proof.
@@ -94,7 +95,7 @@ End confluent_church_rosser.
 
 Section church_rosser_confluent.
 
-  Variable (X : Type) (R : _) (HR : @church_rosser X R).
+  Variable (X : Type) (R : X -> X -> Prop) (HR : @church_rosser X R).
   
   Fact church_rosser_confluent : confluent R.
   Proof.
