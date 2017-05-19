@@ -185,7 +185,7 @@ Section cl_confluent.
     
     admit.
     
-    exists v; split; constructor.
+    subst; exists v; split; constructor.
     
     discriminate H1.
     
@@ -215,7 +215,7 @@ Section cl_confluent.
   
   Corollary cl_rho_confluent : confluent cl_rho.
   Proof.
-    apply square_crt, cl_rho_square.
+    apply square_crt; apply cl_rho_square.
   Qed.
 
 End cl_confluent.
