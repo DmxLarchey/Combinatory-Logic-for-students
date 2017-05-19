@@ -68,10 +68,12 @@ Votre travail est la mise en oeuvre formelle de ces
 preuves informelles dans l'outil Coq.
 
 Enfin, nous organiserons une **soutenance sur machine** d'une
-durée individuelle d'environ 15m le **jeudi 25 mai 2017**
-(date à confirmer) où vous nous présenterez le résultat de
-votre travail et nous exposerez les éventuelles difficultés
-que vous avez rencontrées.
+durée individuelle d'environ 15m le **mardi 30 mai 2017**
+où vous nous présenterez le résultat de votre travail et 
+nous exposerez les éventuelles difficultés que vous avez 
+rencontrées. La soutenance aura lieu dans la **salle 319**
+entre 14h00 et 18h00. Un ordre de passage vous sera 
+communiqué ultérieurement.
 
 Bon travail
 
